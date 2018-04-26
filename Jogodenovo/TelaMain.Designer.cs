@@ -1,6 +1,6 @@
 ﻿namespace Jogodenovo
 {
-    partial class Tinicial
+    partial class TelaMain
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -30,7 +30,7 @@
         {
             this.btniniciar = new System.Windows.Forms.Button();
             this.tBmostrar1 = new System.Windows.Forms.TextBox();
-            this.lblNome = new System.Windows.Forms.Label();
+            this.lblversao = new System.Windows.Forms.Label();
             this.tBmostrar2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -51,14 +51,14 @@
             this.tBmostrar1.Size = new System.Drawing.Size(100, 20);
             this.tBmostrar1.TabIndex = 1;
             // 
-            // lblNome
+            // lblversao
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(150, 271);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(0, 13);
-            this.lblNome.TabIndex = 2;
-            this.lblNome.Click += new System.EventHandler(this.lblNome_Click);
+            this.lblversao.AutoSize = true;
+            this.lblversao.Location = new System.Drawing.Point(150, 271);
+            this.lblversao.Name = "lblversao";
+            this.lblversao.Size = new System.Drawing.Size(0, 13);
+            this.lblversao.TabIndex = 2;
+            this.lblversao.Click += new System.EventHandler(this.lblNome_Click);
             // 
             // tBmostrar2
             // 
@@ -68,17 +68,18 @@
             this.tBmostrar2.TabIndex = 3;
             this.tBmostrar2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // Tinicial
+            // TelaMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 360);
             this.Controls.Add(this.tBmostrar2);
-            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.lblversao);
             this.Controls.Add(this.tBmostrar1);
             this.Controls.Add(this.btniniciar);
-            this.Name = "Tinicial";
-            this.Text = "Tela inicial";
+            this.Name = "TelaMain";
+            this.Text = "TelaMain";
+            this.Load += new System.EventHandler(this.Tinicial_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,7 +89,7 @@
 
         private System.Windows.Forms.Button btniniciar;
         private System.Windows.Forms.TextBox tBmostrar1;
-        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblversao;
         private System.Windows.Forms.TextBox tBmostrar2;
     }
 }

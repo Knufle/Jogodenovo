@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MePresidentaServidor;
 
 namespace Jogodenovo
 {
-    public partial class Tinicial : Form
+    public partial class TelaMain : Form
     {
-        public Tinicial()
+
+        public string Versao { get; set; }
+        public TelaMain(string Versao)
         {
             InitializeComponent();
+            lblversao.Text = Versao;
+            Location = new Point(700, 700);
+            string versao = "3.0";
+            TelaMain f = new TelaMain(versao);
+            f.ShowDialog();
         }
 
         private void btniniciar_Click(object sender, EventArgs e)
@@ -22,7 +30,7 @@ namespace Jogodenovo
             int a, b;
             a = Convert.ToInt32(tBmostrar1.Text);
             b = Convert.ToInt32(tBmostrar2.Text);
-            lblNome.Text = (a + b).ToString();
+            lblversao.Text = (a + b).ToString();
         }
 
         private void lblNome_Click(object sender, EventArgs e)
@@ -31,6 +39,11 @@ namespace Jogodenovo
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tinicial_Load(object sender, EventArgs e)
         {
 
         }

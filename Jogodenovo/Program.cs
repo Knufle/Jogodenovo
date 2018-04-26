@@ -16,7 +16,7 @@ namespace Jogodenovo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tinicial());
+            Application.Run(new TelaMain());
         }
     }
 }
