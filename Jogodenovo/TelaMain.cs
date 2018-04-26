@@ -15,14 +15,14 @@ namespace Jogodenovo
     {
 
         public string Versao { get; set; }
-        public TelaMain(string Versao)
+        public TelaMain()
         {
             InitializeComponent();
-            lblversao.Text = Versao;
             Location = new Point(700, 700);
             string versao = "3.0";
-            TelaMain f = new TelaMain(versao);
-            f.ShowDialog();
+            lblversao.Text = versao;
+            // TelaMain f = new TelaMain(versao);
+            // f.ShowDialog();
         }
 
         private void btniniciar_Click(object sender, EventArgs e)

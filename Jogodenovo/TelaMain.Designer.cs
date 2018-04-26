@@ -56,8 +56,9 @@
             this.lblversao.AutoSize = true;
             this.lblversao.Location = new System.Drawing.Point(150, 271);
             this.lblversao.Name = "lblversao";
-            this.lblversao.Size = new System.Drawing.Size(0, 13);
+            this.lblversao.Size = new System.Drawing.Size(11, 13);
             this.lblversao.TabIndex = 2;
+            this.lblversao.Text = "*";
             this.lblversao.Click += new System.EventHandler(this.lblNome_Click);
             // 
             // tBmostrar2
